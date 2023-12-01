@@ -1,43 +1,71 @@
-:root{
-  --css-primary:#34c94b;
-  --css-black:#121212;
-  --css-white:#FFF;
-}
-
-body{
- font-family: 'Poppins', sans-serif;
- background-color: var(--css-black);
+:root {
+  --color-primary: #34c94b;
+  --color-black: #121212;
+  --color-white: #ffffff;
+  --body-font: "Poppins", sans-serif;
 }
 
 *,
 *::before,
-*::after{
- box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
 * {
- margin: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
 }
 
-body{
- line-height: 1.5;
- -webkit-font-smoothing: antialiased;
+body {
+  font-family: var(--body-font);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-black);
+  columns: var(--color-white);
+
 }
 
-img, picture, video, canvas, svg {
- display: block;
- max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-input, button, textarea, select {
- font: inherit;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
- overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow: break-word;
 }
 
-#root, #_next {
- isolation: isolate;
+#root,
+#__next {
+  isolation: isolate;
 }
 
+.swiper-slide{
+  width: auto;
+}
+a,
+a:hover,
+a:focus,
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
